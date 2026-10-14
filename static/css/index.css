@@ -749,5 +749,38 @@ a:focus {
   }
 }
 
+/* ---- Tighter vertical spacing ---- */
+.section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.hero-body {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+/* Video sections: even tighter */
+.hero.teaser .hero-body {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* Space between header, video and caption */
+.video-section-title {
+  margin-bottom: 1rem !important;
+}
+
+.hero.teaser .subtitle {
+  margin-top: 0.75rem;
+  margin-bottom: 0;
+}
+
+/* Removes the small gap under inline video elements */
+.hero.teaser video {
+  display: block;
+  width: 100%;
+}
+
 
 
