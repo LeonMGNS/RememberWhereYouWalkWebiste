@@ -6,7 +6,7 @@
   
   <!-- Primary Meta Tags -->
   <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
+  <meta name="title" content="Remember Where You Walk - Leon Magnus, Nico Bohlinger, Jan Peters, Oleg Arenz">
   <!-- TODO: Write a compelling 150-160 character description of your research -->
   <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
   <!-- TODO: Add 5-10 relevant keywords for your research area -->
@@ -21,7 +21,7 @@
   <!-- TODO: Replace with your institution or lab name -->
   <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
   <!-- TODO: Same as paper title above -->
-  <meta property="og:title" content="PAPER_TITLE">
+  <meta property="og:title" content="Remember Where You Walk">
   <!-- TODO: Same as description above -->
   <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
   <!-- TODO: Replace with your actual website URL -->
@@ -30,7 +30,7 @@
   <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
+  <meta property="og:image:alt" content="Remember Where You Walk">
   <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
   <meta property="article:author" content="FIRST_AUTHOR_NAME">
   <meta property="article:section" content="Research">
@@ -74,7 +74,7 @@
 
 
   <!-- TODO: Replace with your paper title and authors -->
-  <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
+  <title>Remember Where You Walk - Leon Magnus, Nico Bohlinger, Jan Peters, Oleg Arenz | Academic Research</title>
   
   <!-- Favicon and App Icons -->
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
@@ -91,7 +91,7 @@
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   
   <!-- Fallback for browsers that don't support preload -->
-  <noscript>
+  <noscript>s
     <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
     <link rel="stylesheet" href="static/css/bulma-slider.min.css">
     <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
@@ -277,20 +277,10 @@
                       </a>
                     </span>
 
-                    <!-- TODO: Add your supplementary material PDF or remove this section -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
+  
                   <!-- TODO: Replace with your GitHub repository URL -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/LeonMGNS/visual_locomotion_mjx" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -366,23 +356,41 @@ reducing the reconstruction error threefold.
 </section>
 <!-- End paper abstract -->
 
-<!-- Teaser video-->
+<!-- Maze prediction video -->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/real_world_lsmm.mp4" type="video/mp4">
+      <h2 class="title is-3 has-text-centered video-section-title">
+        Real-Time Maze Prediction from Memory
+      </h2>
+      <video poster="" id="maze-video" autoplay controls muted loop height="100%" preload="metadata">
+        <source src="static/videos/maze_predictions_live.mp4" type="video/mp4">
       </video>
-      <!-- TODO: Replace with your video description -->
       <h2 class="subtitle has-text-centered">
-        Live prediction of the Go2 Quadruped running through a maze for ours LSMM and 3 baselines while the current prediction is visualized every timestep
+        Maze exploration of our approach (LSMM) and three baselines (LSTM, FixedWindow, Transformer) in a maze shown in black. Each approach's current prediction of the maze layout is shown alongside.
       </h2>
     </div>
   </div>
 </section>
-<!-- End teaser video -->
+
+
+<!-- Real-world video -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3 has-text-centered video-section-title">
+        Zero-Shot Transfer to the Real World
+      </h2>
+      <video poster="" id="real-world-video" autoplay controls muted loop height="100%" preload="metadata">
+        <source src="static/videos/real_world_lsmm.mp4" type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        A Go2 quadruped explores a real-world maze using LSMM, transferred zero-shot from simulation. At every timestep we show the internal state of its spatial memory alongside the predicted maze layout
+      </h2>
+    </div>
+  </div>
+</section>
+
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
